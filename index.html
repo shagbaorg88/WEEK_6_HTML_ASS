@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Perspectives on Autopsies</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Confronting the Tension Between Autopsy Practices and Deep-Seated Beliefs Across Cultures</h1>
+            <p class="subtitle">Exploring how different religious and cultural traditions view post-mortem examinations</p>
+        </header>
+        
+        <div class="controls">
+            <div class="theme-toggle">
+                <span>Dark Mode:</span>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider"></span>
+                </label>
+            </div>
+            
+            <div class="font-controls">
+                <span>Text Size:</span>
+                <button id="decreaseFont">A-</button>
+                <button id="increaseFont">A+</button>
+            </div>
+        </div>
+        
+        <div class="article-content">
+            <div class="main-article">
+                <div class="religion-section">
+                    <h2>Christianity: Between Resurrection and Rigor Mortis</h2>
+                    <p>Christianity, particularly Roman Catholicism, generally accepts autopsies. In 1952, Pope Pius XII stated that post-mortem examinations do not violate a person's dignity. However, this perspective is not universal. Many evangelical and Pentecostal Christians view the body as a sacred temple and believe that cutting into it is not only offensive but may expose one to spiritual dangers. The theological question also arises: what happens to a resurrected body if it has been altered?</p>
+                </div>
+                
+                <div class="religion-section">
+                    <h2>Islam: Divine Order and Divine Offense</h2>
+                    <p>Islamic teachings treat death with immense reverence. The Prophet Muhammad (peace be upon him) warned, "Breaking the bone of a dead person is like breaking it when he is alive." Burial should be immediate, preferably within 24 hours, and the body must remain intact. Autopsies, therefore, are widely resisted. However, the principle of maslaha (public interest) allows exceptions. If an autopsy serves justice or saves lives, some Islamic scholars permit it reluctantly. But even then, the tension between duty to the dead and duty to the living remains unresolved.</p>
+                </div>
+                
+                <div class="religion-section">
+                    <h2>Judaism: Sacred Speed and Silent Resistance</h2>
+                    <p>In Judaism, the urgency of burial is sacred. The Talmud states, "One who delays the burial of the dead violates a commandment." Autopsies are often rejected to avoid nivul hamet the desecration of the body. However, Jewish law does permit them in rare cases, especially when it may save another life (pikuach nefesh). Yet the emotional and spiritual weight remains heavy. Even when allowed, autopsies are viewed not as acceptable, but as tragic necessities.</p>
+                </div>
+                
+                <div class="religion-section">
+                    <h2>Hinduism: Reincarnation Interrupted</h2>
+                    <p>In Hindu belief, the soul is eternal, while the body is a temporary vessel. After death, the soul begins its journey toward reincarnation or union with Brahman. Autopsies are often seen as disrupting this sacred transition, possibly trapping the soul or disturbing karmic balance. In modern, urban Hindu societies, autopsies may be tolerated for legal or public health reasons. Yet in rural areas, they are viewed as sacrilegious unless performed with priestly oversight and ritual purification.</p>
+                </div>
+                
+                <div class="religion-section">
+                    <h2>Buddhism: Compassionate Incisions?</h2>
+                    <p>Buddhism emphasizes the impermanence of the body. The Dhammapada teaches, "This body is but a heap of bones, flesh, and blood." Many Buddhists accept autopsies if done respectfully, as the soul has already departed. But this acceptance varies. In Tibetan Buddhism, specific rituals must precede any bodily disturbance. Without them, spiritual disorientation may occur. Thus, while compassion for the living might justify an autopsy, compassion for the dead demands ritual care.</p>
+                </div>
+                
+                <div class="religion-section">
+                    <h2>African Traditional Religion: When Ancestors Frown</h2>
+                    <p>In many African cultures, especially in Nigeria and Ghana, death is not the end it is a passage to the ancestral realm. The body is a sacred link to the ancestors, and autopsies are often considered a grave insult. Dissecting the dead without consent may provoke ancestral anger, bringing misfortune to the family. While traditional healers may cut bodies for ritual purposes, autopsies conducted by medical professionals are sometimes seen as colonial impositions, violating both the corpse and cultural sovereignty.</p>
+                </div>
+                
+                <div class="religion-section">
+                    <h2>The Global Autopsy Dilemma: Sacred or Suspicious?</h2>
+                    <p>This is not a clash of East versus West, but of science versus sanctity, of reason versus reverence. On one side, public health officials seek answers through autopsies. On the other hand, grieving families and religious communities demand the right to bury their dead whole. Should a forensic team override family objections for the sake of data? Should justice trump ritual purity? These questions cut deeper than any scalpel.</p>
+                </div>
+                
+                <div class="religion-section">
+                    <h2>Conclusion: Who Owns the Dead?</h2>
+                    <p>Autopsy isn't merely a clinical procedure it is a moral crossroads. It asks: Who has authority over the body once life has fled? The family? The state? The divine? Perhaps none, or all. The dead do not speak, but how we treat them reveals who we are. In every incision, real or virtual, we lay bare our values. And in that reflection, the question remains: in our pursuit of truth, do we risk severing something sacred?</p>
+                </div>
+            </div>
+            
+            <div class="interactive-sidebar">
+                <div class="cultural-map">
+                    <h3>Global Perspectives Map</h3>
+                    <p>Click on different regions to learn about autopsy acceptance rates and cultural attitudes:</p>
+                    
+                    <div class="map-visual">
+                        <div class="region europe" data-info="Europe: Generally high acceptance of autopsies for medical and legal purposes, with some religious exceptions."></div>
+                        <div class="region middle-east" data-info="Middle East: Generally low acceptance due to Islamic teachings, with exceptions for legal requirements."></div>
+                        <div class="region asia" data-info="Asia: Mixed attitudes with urban areas more accepting than rural communities with traditional beliefs."></div>
+                        <div class="region africa" data-info="Africa: Generally low acceptance with strong cultural resistance in many regions."></div>
+                        
+                        <div class="region-info" id="regionInfo"></div>
+                    </div>
+                </div>
+                
+                <div class="comments-form">
+                    <h3>Share Your Perspective</h3>
+                    <form id="commentForm">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" placeholder="Your name">
+                            <div class="error" id="nameError">Please enter your name</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="culture">Cultural/Religious Background:</label>
+                            <select id="culture">
+                                <option value="">Select an option</option>
+                                <option value="christianity">Christianity</option>
+                                <option value="islam">Islam</option>
+                                <option value="judaism">Judaism</option>
+                                <option value="hinduism">Hinduism</option>
+                                <option value="buddhism">Buddhism</option>
+                                <option value="african">African Traditional</option>
+                                <option value="other">Other</option>
+                                <option value="none">None</option>
+                            </select>
+                            <div class="error" id="cultureError">Please select an option</div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="comment">Your Perspective:</label>
+                            <textarea id="comment" placeholder="Share your thoughts on this topic..."></textarea>
+                            <div class="error" id="commentError">Please share your perspective</div>
+                        </div>
+                        
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <p>This interactive article is for educational purposes only. The information presented is a simplification of complex cultural and religious perspectives.</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
